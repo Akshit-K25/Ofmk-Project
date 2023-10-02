@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Sidebar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-dashboard bx-tada'></i></span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-desktop bx-tada' ></i></span>
+                    <span class="title">Common IT Systems</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-check bx-tada' ></i></span>
+                    <span class="title">Online Approval Generation</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-building-house bx-tada' ></i></span>
+                    <span class="title">EO Civil</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-wrench bx-tada' ></i></span>
+                    <span class="title">EO Mechanical</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-report bx-tada' ></i></span>
+                    <span class="title">AVNL Reports</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-receipt bx-tada' ></i></span>
+                    <span class="title">MM Bills</span>
+                </a>
+            </li>
+        </ul>
+        <div class="toggle"></div>
+    </div>
+
+    <script>
+        let navigation = document.querySelector('.navigation');
+        let toggle = document.querySelector('.toggle');
+        toggle.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
