@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="navigation.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+</head>
+<body>
+    <div class="drop">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon"><i class='bx bx-home-alt'></i></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bx-info-circle' ></i></span>
+                    <span class="text">General</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bx-user' ></i></span>
+                    <span class="text">E-Admin</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bxl-product-hunt' ></i></span>
+                    <span class="text">PPC</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-report' ></i></span>
+                    <span class="text">GM Reports</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bx-group' ></i></span>
+                    <span class="text">Rajbhasha</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bx-plus-medical' ></i></span>
+                    <span class="text">Hospital</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-package' ></i></span>
+                    <span class="text">Orders</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bx-credit-card-alt' ></i></span>
+                    <span class="text">Finance</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-user-account' ></i></span>
+                    <span class="text">Sams</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+
+    <div class="navigation">
+        <ul>
+            
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-dashboard bx-tada'></i></span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-desktop bx-tada' ></i></span>
+                    <span class="title">Common IT Systems</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-check bx-tada' ></i></span>
+                    <span class="title">Online Approval Generation</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-building-house bx-tada' ></i></span>
+                    <span class="title">EO Civil</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-wrench bx-tada' ></i></span>
+                    <span class="title">EO Mechanical</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bxs-report bx-tada' ></i></span>
+                    <span class="title">AVNL Reports</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-edit bx-tada' ></i></span>
+                    <span class="title">Running Manpower Contracts</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-box bx-tada' ></i></span>
+                    <span class="title">BIN ROL Items Status</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-book bx-tada' ></i></span>
+                    <span class="title">Manuals and SOP's</span>
+                </a>
+            </li>
+        </ul>
+        <div class="toggle"></div>
+    </div>
+
+    <div class="home-section">
+        <div class="msg">
+          <h3>Online Messages</h3>
+        </div>
+        <div class="ret">
+          <h3>Retiring Employees</h3>
+        </div>
+        <div class="bday">
+          <h3>Happy Birthday</h3>
+        </div>
+        </div>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('mouseover',activeLink));
+    </script>
+
+<script>
+    let navigation = document.querySelector('.navigation');
+    let toggle = document.querySelector('.toggle');
+    toggle.onclick = function(){
+        navigation.classList.toggle('active')
+    }
+</script>
+
+</body>
+</html>
