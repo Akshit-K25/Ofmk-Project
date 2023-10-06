@@ -63,6 +63,7 @@ body{
   }
   .image1{
     margin: 0 auto;
+    top: 15px;
     position: relative;
     width: 195px;
     height: 120px;
@@ -73,7 +74,7 @@ body{
     background-color: #fff;
     opacity: 0.9;
     top: -2px;
-    left: 250px;
+    left: 300px;
     width: 150px;
     height: 125px;
   }
@@ -81,9 +82,10 @@ body{
     margin: 0 auto;
     position: relative;
     background-color: #fff;
+    opacity: 0.9;
     top: -2px;
-    left: 250px;
-    width: 150px;
+    left: 300px;
+    width: 198px;
     height: 125px;
   }
 
@@ -156,6 +158,67 @@ body{
 .drop ul li.active a .text{
     opacity: 1;
     transform: translateY(10px);
+}
+
+.drop ul ul{
+    margin: 20px 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    top: 80px;
+    left: 0;
+    width: 200px;
+    z-index: 1;
+    background: #063247;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.drop ul ul li{
+    top: 10px;
+    width: 150px;
+    padding: 10px;
+}
+
+.drop ul ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.drop ul ul li a:hover{
+    color: gold;
+}
+
+.drop ul ul li a i{
+    float: right;
+    margin-top: 14px;
+    margin-left: 135px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.drop ul ul li a:hover i{
+    color: gold;
+}
+
+.drop ul ul ul{
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.drop ul ul li:hover ul{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
+
+.drop li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
 }
 
 .indicator{
@@ -376,6 +439,12 @@ body{
     font-size: 1.75em;
 }
 
+.navigation ul li a .icon2 i{
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-left: 80px;
+}
+
 .navigation ul li a .title{
     position: relative;
     display: block;
@@ -417,7 +486,7 @@ body{
     top: 220px;
     left: 960px;
     width: 350px;
-    height: 510px;
+    height: 500px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     box-shadow: 5px 5px 12px rgb(0,0,0,.16);
@@ -428,7 +497,7 @@ body{
     top: 540px;
     left: 230px;
     width: 700px;
-    height: 190px;
+    height: 180px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     overflow: auto;
